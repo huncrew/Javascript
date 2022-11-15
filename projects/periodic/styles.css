@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #c4d9ea;
+    padding: 10px; 
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+  }
+  .item2 {
+    grid-column-start: 18;
+  }
+  .item5 {
+    grid-column-start: 13;
+  }
+  .item72, item57 {
+    grid-column-start: 4;
+  }
+  .item57 {
+    grid-column-start: 4;
+  }
+  .periodicPic {
+      display: none;
+      width: 100%;
+      height: auto; 
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .periodicPic {
+        display: block;
+    }
+    .grid-container {
+        display: none;
+    }
+  }
